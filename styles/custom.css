@@ -1,0 +1,843 @@
+
+li.employlist{
+    list-style: circle !important;
+    }
+
+
+    html,
+
+    body {
+
+
+
+        color:white;
+
+
+
+    }
+
+    .email1{
+
+        display:none;
+
+    }
+
+    /*Pre loader-------------------*/
+
+    div#load_screen{
+
+        background:#000;
+
+        opacity: 1;
+
+        position: fixed;
+
+        z-index: 10;
+
+        top: 0px;
+
+        width:100%;
+
+        height:1600px;
+
+    }
+
+    div#loading{
+
+        color:#fff;
+
+        width: 120px;
+
+        height:24px;
+
+        margin:100px auto;
+
+    }
+
+        .loader
+
+        {
+
+
+
+            padding:20px;
+
+            border:3px solid transparent;
+
+            border-radius: 50%;
+
+            border-top:5px solid blue;
+
+            border-right:5px solid blue;
+
+            width:200px;
+
+            height:200px;
+
+            position: absolute;
+
+            bottom:0;
+
+            left:0;
+
+            right:0
+
+            margin auto;
+
+            animation: spin 4s linear infinite;
+
+        }
+
+        .inside{
+
+            padding:20px;
+
+            border:3px solid transparent;
+
+            border-radius: 50%;
+
+            border-left:3px solid blue;
+
+            border-top:3px solid blue;
+
+            width:150px;
+
+            height:150px;
+
+            animation: inside 4s ease infinite;
+
+        }
+
+        .insmall{
+
+            padding:20px;
+
+            border:3px solid transparent;
+
+            border-radius: 50%;
+
+            border-left:3px solid purple;
+
+            border-bottom:3px solid purple;
+
+            width:100px;
+
+            height:100px;
+
+            animation:small 3s linear infinite;
+
+        }
+
+        .xsmall{
+
+            padding:20px;
+
+            border:3px solid transparent;
+
+            border-radius: 50%;
+
+            border-left:3px solid purple;
+
+            border-top:3px solid purple;
+
+            width:50px;
+
+            height:50px;
+
+            animation: xsmall 5s ease infinite;
+
+        }
+
+        @keyframes spin{
+
+            0%{transform: rotate(0deg);
+
+            }
+
+            100%{
+
+                transform: rotate(360deg) ;
+
+            }
+
+        }
+
+        @keyframes inside{
+
+                0%{transform: rotate(0deg);
+
+            }
+
+            100%{
+
+                transform: rotate(360deg) ;
+
+            }
+
+        }
+
+        @keyframes small{
+
+            0%{transform: rotate(0deg);
+
+            }
+
+            100%{
+
+                transform: rotate(360deg) ;
+
+            }
+
+        }
+
+        @keyframes xsmall{
+
+            0%{transform: rotate(0deg);
+
+            }
+
+            100%{
+
+                transform: rotate(360deg) ;
+
+            }
+
+        }
+
+        /*End of the pre-loader --------*/
+
+    body {
+
+
+
+    }
+
+    /*---- Nav Bar-----*/
+
+    .navbar{
+
+        margin-bottom:0;
+
+        }
+
+    .navbar-default{
+
+        background: #fff;
+
+        width:100%;
+
+
+
+        border-bottom:1px #ccc solid;
+
+
+
+
+
+    }
+
+    .mask{
+
+      z-index:100;
+
+      background: #000;
+
+    }
+
+    .navbar-brand {
+
+        float: left;
+
+        height: 50px;
+
+        padding:5px 10px 5px 10px;
+
+        font-size: 18px;
+
+        line-height: 20px;
+
+
+
+    }
+
+
+
+     .navbar-default .navbar-nav>li>a:hover {
+
+        color:#fff;
+
+        font-size: 15px;
+
+        background: #FF3535;
+
+
+
+    }
+
+    #contact{
+
+     color:#FF3535;
+
+    }
+
+    .navbar-default .navbar-nav>li>a {
+
+        color:#FF3535;
+
+        font-size: 15px;
+
+
+
+    }
+
+    .nav {
+
+        font-family: 'Roboto', sans-serif;
+
+        font-size: 15px;
+
+        line-height: 23px;
+
+        z-index:1;
+
+
+
+    }
+
+    .navbar{
+
+        border-radius: 0px;
+
+    }
+
+    .sticky {
+
+      position: fixed;
+
+      width: 100%;
+
+      left: 0;
+
+      top: 0;
+
+      z-index: 2000;
+
+      border-top: 0;
+
+    }
+
+    /*--------End of NavBar----------*/
+
+    /* ------ Sections -----*/
+
+    .about {
+
+       text-align: center;
+
+        background:#fff;
+
+        height:auto;
+
+        color:#008Ca0;
+
+        width:Auto;
+
+        padding-top:60px;
+
+
+
+       }
+
+    .employment{
+
+        text-align: center;
+
+        color:#008Ca0;
+
+         background:#008ca0;
+
+         padding:60px 0 ;
+
+
+
+    }
+
+    .topskills {
+
+       text-align: center;
+
+        color:#008Ca0;
+
+         padding-top:60px;
+
+
+
+       }
+
+
+
+       .topskills hr.small{
+
+        color:#008Ca0;
+
+       }
+
+       .otherskills{
+
+        text-align: center;
+
+
+
+       }
+
+
+
+    .skills {
+
+        text-align: center;
+
+        height:auto;
+
+        width:100%;
+
+        height:100%;
+
+    }
+
+    #skills{
+
+        background: #fff;
+
+    }
+
+
+
+
+
+       /*--------SkillBar---------------------*/
+
+        .skillbar{
+
+            position: relative;
+
+            display: block;
+
+            margin-bottom: 15px;
+
+            width: 100%;
+
+            background:#eee;
+
+            height:35px;
+
+            border-radius: 3px;
+
+            box-shadow: 5px 5px 10px #000;
+
+
+
+        }
+
+        .skillbar-bar{
+
+            position: absolute;
+
+            display: block;
+
+            height:35px;
+
+            width:0px;
+
+            z-index:10;
+
+
+
+       }
+
+        .skillbar-title{
+
+            position: absolute;
+
+            display:block;
+
+            top:0;
+
+            left:0;
+
+            width:100px;
+
+            z-index: 1000;
+
+            padding-top:8px;
+
+            color:black;
+
+            height:100%;
+
+            float: left;
+
+            color:#000;
+
+            padding-left:10px;
+
+
+
+        }
+
+        .skill-bar-percent{
+
+          position: relative;
+
+            float:right;
+
+            color:black;
+
+            z-index: 1000;
+
+             padding-top:8px;
+
+            margin-right: 5px;
+
+        }
+
+        .skillrow{
+
+          padding-top:5px;
+
+          padding-bottom:5px;
+
+        }
+
+        .skillcolor{
+
+           background:#ff3535;
+
+        }
+
+
+
+    /*----------------Progress Bar ------*/
+
+
+
+
+
+    .contact{
+
+        background:#C5EDF7;
+
+        height:auto;
+
+        padding:60px 0px;
+
+    }
+
+    #homeheading{
+
+        color:#C5EDF7;
+
+    }
+
+    .aboutarrow{
+
+        font-size:60px;
+
+        color:#7d314c;
+
+    }
+
+
+
+
+
+    h1{
+
+        color:#7d314c;
+
+    }
+
+    h3{
+
+         color:#fff;
+
+    }
+
+
+
+
+
+    .text-primary{
+
+        color:#FF3535;
+
+    }
+
+    strong, p{
+
+        color:#7D314C;
+
+        font-family: 'Roboto', sans-serif;
+
+        font-size: 15px;
+
+        line-height: 23px;
+
+    }
+
+
+
+
+
+    .icons {
+
+        font-size:50px;
+
+        text-align: center;
+
+
+
+    }
+
+
+
+
+
+    /* End of custom Nyah's Design css */
+
+    /*Time Line css */
+
+    .timeline{
+
+      margin-left:40px;
+
+    }
+
+    .container ul li{
+
+       position:relative;
+
+      padding:10px;
+
+      list-style:none;
+
+      text-align: left;
+
+    }
+
+    span.circle:before{
+
+      background:#008Ca0;
+
+      content:'';
+
+      position:absolute;
+
+      border:2px solid #ccc;
+
+      width:20px;
+
+      height:20px;
+
+      left:96px;
+
+      top:0px;
+
+      border-radius: 50%;
+
+
+
+      z-index:100;
+
+    }
+
+    .content{
+
+      position: relative;
+
+      left:120px;
+
+      width:90%;
+
+      box-shadow: 10px 10px 10px #000;
+
+      background: #fff;
+
+      padding:10px 10px 10px 10px;
+
+
+
+    }
+
+    .hrtimeline{
+
+      position: relative;
+
+      left:10px;
+
+      top:-80px;
+
+      height:4px;
+
+
+
+    }
+
+    /* --- Line for the timeline */
+
+    .timeline:before{
+
+      content:'';
+
+      background:#fff;
+
+      width:4px;
+
+      height:100%;
+
+      top:20px;
+
+      position:absolute;
+
+      left:200px
+
+
+
+    }
+
+    .time{
+
+      position:relative;
+
+      left:-120px;
+
+      top:-15px;
+
+      font-size: 20px;
+
+      font-weight: bold;
+
+      color:#322a60;
+
+
+
+    }
+
+    .company{
+
+      color:#008ca0;
+
+      font-size: 24px;
+
+    }
+
+    .title{
+
+      color:#008ca0;
+
+      font-size: 20px;
+
+    }
+
+    .description{
+
+
+
+
+
+    }
+
+
+
+    @media screen and (max-width: 800px) {
+
+      .container ul:before{
+
+        left:20px;
+
+    }
+
+    .timeline{
+
+      margin-left:0px;
+
+    }
+
+    .content{
+
+      position: relative;
+
+      left:0px;
+
+      top:0px;
+
+      width:95%;
+
+    }
+
+    .skillrow{
+
+         width:70%;
+
+         margin:auto;
+
+        }
+
+    span.circle:before{
+
+      background:#008Ca0;
+
+      content:'';
+
+      position:absolute;
+
+      border:2px solid #ccc;
+
+      width:20px;
+
+      height:20px;
+
+      border-radius:50%;
+
+      left:-43px;
+
+      top:0;
+
+    }
+
+    .time{
+
+      position:relative;
+
+      left:0px;
+
+      top:-10px;
+
+    }
+
+    .title{
+
+      position:relative;
+
+      left:0px;
+
+      top:-10px;
+
+    }
+
+    .description{
+
+      position:relative;
+
+      left:0px;
+
+      top:-5px;
+    }
+
+    .logo{
+
+      width:20%;
+
+      height:20%;
+
+    }
+      }
