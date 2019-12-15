@@ -2,90 +2,246 @@
 <html>
 
 <head>
-  <title>John Carmichael's Portfolio</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/main.css" />
-  <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js" data-auto-a11y="true"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content=" " />
+  <title>Nyah's Design</title>
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+  <!-- Custom CSS -->
+  <link href="styles/custom.css" rel="stylesheet" />
+  <link href="styles/main.css" rel="stylesheet" />
+
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700" rel="stylesheet"
+    type="text/css" />
+  <!-- Progress Circles-->
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css" />
+  <!--<link rel="stylesheet" href="jQuery-plugin-progressbar.css">-->
 </head>
 
 <body>
-  <header>
-    <div class="name">John Carmichael</div>
-    <div class="links">
-      <div class="link">
-        <a href="https://www.linkedin.com/in/jlcarmic/" target="_blank">LinkedIn</a>
+
+  <!-- Header -->
+
+  <header id="top" class="header">
+    <div class="container">
+      <div class="row">
+        <div class="text-vertical-center">
+          <h1 id="homeHeading">Nyah's Design</h1>
+          <img class="logo" src="https://nyahsdesign.com/img/logoco.png" alt="Nyah's Design">
+          <h3>Web Developer | Database Administer</h3>
+          <br>
+          <a href="#about" class="aboutarrow">
+            <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></a>
+        </div>
       </div>
-      <div class="link">
-        <a href="https://github.com/jlcarmic" target="_blank">GitHub</a>
-      </div>
-      <div class="link">
-        <a href="https://codepen.io/jlcarmic/" target="_blank">CodePen</a>
-      </div>
-      <div class="link">
-        <a href="./resume.pdf" target="_blank">Resume</a>
-      </div>
-    </div>
+    </div> <!-- Closing header container-->
   </header>
-  <div class="content">
-    <div class="section about">
-      <div class="photo"></div>
-      <div class="description">
-        <p>
-          I am a product developer with over a decade of experience building best-of-class solutions.
-          With expertise in product development, software engineering, cyber security, and technical operations,
-          I have helped startups create products to delight their customers.
-        </p>
-        <p>
-          I have held positions as a Software Engineer, Security Engineer, Director of Operations, and Vice President
-          of Product & Engineering.
-        </p>
+  <!-- Navigation -->
+  <nav class="nav navbar navbar-default ">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#top">
+          <img alt="Brand" src="https://nyahsdesign.com/img/logoco.png" style="height:40px;width:40px">
+        </a>
       </div>
-    </div>
-    <div class="divider">Projects</div>
-    <div class="section projects">
-      <div class="project">
-        <div class="explanation">
-          <p>Animated floating Hal Jordan, the Green Lantern.</p>
-          <p>Image is an SVG created in Sketch.</p>
-          <p>Animation is achieved with CSS.</p>
-          <a href="https://github.com/jlcarmic/green-lantern" target="_blank">
-            <button class="button">Green Lantern</button>
-          </a>
-        </div>
-        <div class="screenshot">
-          <img src="images/greenlantern.png" />
-        </div>
-      </div>
+      <!-- Collect the nav links for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#top">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="./Shaniresume.pdf">Resume</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!--end of the nav -->
+  <!-- Start of Section about-->
+  <section class="about" id="about">
+    <div class="container">
+      <!-- Container class-->
+      <div class="row">
+        <div class="col-md-12">
+          <h2>About</h2>
+          <hr class="small">
+          <p> I am a BackEnd Developer who eager to learn new technologies.
+            I have been programming in PHP and Mysql for over 4 years.
+            Over the past few months I have been learning node.js and express.js as well as alexa skills and more.
 
-      <div class="project">
-        <div class="screenshot">
-          <img src="./images/producthuntalexa.png" />
-        </div>
-        <div class="explanation">
-          <p>An Alexa Skill for hearing Today's Featured products.</p>
-          <p>Built using NodeJS and AWS Lambda.</p>
-          <p>Utilizes ProductHunt's API.</p>
           </p>
-          <a href="https://github.com/jlcarmic/producthunt_alexa_skill" target="_blank">
-            <button class="button">Today's Featured</button>
-          </a>
         </div>
       </div>
 
-      <div class="project">
-        <div class="explanation">
-          <p>An NPM package for accessing sports<br />stats via the Stattleship API.</p>
-          <p>Built in NodeJS and published to NPM<br />as an open source package.</p>
-          <a href="https://github.com/jlcarmic/node-stattleship" target="_blank">
-            <button class="button">Node Stattleship</button>
-          </a>
+      <div class="row">
+        <div class="col-md-6 skillrow">
+          <div class="skillbar clearfix" data-percent="85%">
+            <div class="skillbar-title"><span>PHP</span></div>
+            <div class="skillbar-bar skillcolor"></div>
+            <div class="skill-bar-percent">85%</div>
+          </div>
         </div>
-        <div class="screenshot">
-          <img class="stattleship" src="./images/stattleship.svg" />
+        <!-- End of PHP Row -->
+
+        <div class="col-md-6 skillrow">
+          <div class="skillbar clearfix" data-percent="90%">
+            <div class="skillbar-title"><span>HTML</span></div>
+            <div class="skillbar-bar skillcolor"></div>
+            <div class="skill-bar-percent">90%</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- End of HTML-->
+
+      <div class="row">
+        <div class="col-md-6 skillrow">
+          <div class="skillbar clearfix" data-percent="75%">
+            <div class="skillbar-title"><span>MySQL</span></div>
+            <div class="skillbar-bar skillcolor"></div>
+            <div class="skill-bar-percent">75%</div>
+          </div>
+        </div>
+        <!-- End of MySQL-->
+        <div class="col-md-6 skillrow">
+          <div class="skillbar clearfix" data-percent="70%">
+            <div class="skillbar-title"><span>CSS</span></div>
+            <div class="skillbar-bar skillcolor"></div>
+            <div class="skill-bar-percent">70%</div>
+          </div>
         </div>
       </div>
+      <!-- End of CSS-->
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="topskills">Other Skills</h4>
+        </div>
+      </div>
+      <div class="row otherskills">
+        <div class="col-md-12">
+          <p>Javascript | Java | Bootsstrap | Node js | Express js</p>
+        </div>
+      </div>
+    </div><!-- End of the skills Container-->
+
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+          <h2>Projects</h2>
+          <hr class="small">
+          GIT HUB
+          <a href="https://github.com/Shanifos" style="color:#fff">
+            <i cla="fa fa-github fa-2x" aria-hidden="true"></i></a>
+          <div class="row">
+            <div class="col-md-12 feature">
+              <h2 style="color:#333333">
+                Weather Site</h2>
+              <div class="portfolio-item">
+                <img alt="Weather" class="img-portfolio img-responsive"
+                  src="https://nyahsdesign.com/Portfolio/Weather/weather.png">
+                <div class="caption">
+                  <div>OpenWeatherAPI</div>
+                  <div>FrontEnd: Javascript, Jquery, HTML,CSS</div>
+                  <div>Framework: BootStrap</div>
+                  <a class="btn btn-primary" href="https://nyahsdesign.com/Portfolio/Weather/index.html"> View Site
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 feature">
+
+                <h2 style="color:#333333">
+
+                  Simple Blog/CMS System</h2>
+
+                <div class="portfolio-item">
+                  <img alt=" beginlife" class="img-portfolio img-responsive"
+                    src="https://nyahsdesign.com/Portfolio/simpleblog/screenshot.png">
+                  <div class="caption">
+                    <div>I used a bootstrap pre-made template for the main site and Dashboard. </div>
+
+                    <div>BackEnd: PHP,MYSQL,AJAX and JSON</div>
+                    <div>FrontEnd: HTML,CSS</div>
+                    <div>Framework: BootStrap</div>
+
+
+                    <a class="btn btn-primary" href="https://nyahsdesign.com/Portfolio/simpleblog/"> View Site
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+
+                <h2 style="color:#333333">
+
+                  Begin Life Right(Original)</h2>
+
+                <div class="portfolio-item" style="background: #000">
+
+
+
+                  <img alt=" beginlife" class="img-portfolio img-responsive"
+                    src="https://nyahsdesign.com/img/beginlife.png">
+                  <div class="caption">
+
+                    <div> HTML,CSS</div>
+
+                    <a href="http://nyahsdesign.com/old/portfolio/Begin/index.html"> View Site
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
     </div>
-  </div>
-</body>
+  </section>
+</body> <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/custom.js"></script>
+<script src="js/jQuery-plugin-progressbar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+<script>
+  $(".progress-bar").loading();
+  $('input').on('click', function () {
+    $(".progress-bar").loading();
+  });
+// $("#contactMe").validate();
+</script>
+
+</html>
 
 </html>
